@@ -1,1 +1,15 @@
-<h1>Hello world</h1>
+<h1>{{title}} and number = {{numbItem * 180}}</h1>
+<p>{{arrNumb}}</p>
+<p>{{'Hello' +' '+ 'hi'}}</p>
+<app-post></app-post>
+<app-postFour></app-postFour>
+
+
+<div id="info">
+<!--  <img [src]="img" alt="react">-->
+
+  <input type="text" (keyup.enter)="onInput(myInput.value)" (blur)="onBlur(myInput.value)" #myInput>
+  <p>{{inputValue}}</p>
+
+  <button (click)="onClickBtn()">Click</button>
+</div>
