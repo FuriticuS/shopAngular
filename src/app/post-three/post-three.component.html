@@ -1,1 +1,17 @@
 <p>post-three works!</p>
+
+<div>
+  <p>Test "to wait data binding"</p>
+
+  <input type="text" [value]="title" (input)="onInput($event)">
+
+  <p>{{title}}</p>
+</div>
+
+<div>
+  <p>Test "to wait data binding" c помощью ngModel</p>
+
+  <input type="text" [(ngModel)]="titleTwo">
+
+  <p>{{titleTwo}}</p>
+</div>
