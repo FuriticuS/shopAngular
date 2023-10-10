@@ -1,0 +1,29 @@
+<p>Директивы - Стили ngStyle и их динамическое изменение</p>
+
+<button (click)="backGroundToggle = !backGroundToggle">new background</button>
+
+<div [ngStyle]="{
+  width:'200px',
+  height: '200px',
+  border:'3px solid gray',
+  backgroundColor: backGroundToggle ? 'pink' : 'gold'
+}"></div>
+
+<p>Директивы - Изменение класса</p>
+
+<button (click)="whiteClass = !whiteClass">Edit class</button>
+
+<div>
+  <p [ngClass]="{
+    white: whiteClass,
+    gray: !whiteClass
+  }">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, veniam!</p>
+</div>
+
+<p>Директивы - Изменение класса если надо поменять два</p>
+
+<button (click)="whiteClassTwo = !whiteClassTwo">Edit class</button>
+
+<div>
+  <p [class.white]="whiteClassTwo" [class.gray]="!whiteClassTwo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, veniam!</p>
+</div>
