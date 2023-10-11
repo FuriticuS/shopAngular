@@ -9,3 +9,16 @@
   </ng-template>
 
 </div>
+
+<p>Структурные директивы - Условие ngSwitch</p>
+
+<div>
+  <button (click)="toggleSwitch = !toggleSwitch">Toggle</button>
+  <button (click)="toggleSwitch = 111">Третий параметр</button>
+
+  <div [ngSwitch]="toggleSwitch">
+    <p *ngSwitchCase="true" class="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, similique.</p>
+    <p *ngSwitchCase="false" class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, similique.</p>
+    <p *ngSwitchDefault class="gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, similique.</p>
+  </div>
+</div>

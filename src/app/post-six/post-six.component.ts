@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class PostSixComponent {
   toggleFont = false
+  toggleSwitch: any = false
 }
