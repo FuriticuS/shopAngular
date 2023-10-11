@@ -1,0 +1,11 @@
+<p>Структурные директивы - Условие ngif и else</p>
+
+<div>
+  <button (click)="toggleFont = !toggleFont">Toggle</button>
+  <p *ngIf="toggleFont; else blueClass;" class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, soluta.</p>
+
+  <ng-template #blueClass>
+    <p class="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, similique.</p>
+  </ng-template>
+
+</div>
