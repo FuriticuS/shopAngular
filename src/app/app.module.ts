@@ -9,6 +9,7 @@ import {PostFourComponent} from "./post-four/postFour.component";
 import {FormsModule} from "@angular/forms";
 import { PostFiveComponent } from './post-five/post-five.component';
 import { PostSixComponent } from './post-six/post-six.component';
+import { PostSevenComponent } from './post-seven/post-seven.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PostSixComponent } from './post-six/post-six.component';
     PostThreeComponent,
     PostFourComponent,
     PostFiveComponent,
-    PostSixComponent
+    PostSixComponent,
+    PostSevenComponent
   ],
   imports: [
     BrowserModule,
